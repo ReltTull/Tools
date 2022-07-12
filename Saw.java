@@ -1,6 +1,13 @@
 public class Saw extends Tool{
     // класс пило, с методом cut для работы с блоком дерева, где уменьшается TreeBlock.state.
-    TreeBlock tr;
+    TreeBlock tr = new TreeBlock(10);
+
+    public Saw(TreeBlock treeBlock) {
+        super();
+        treeBlock = tr;
+    }
+
+
     @Override
     void using() {
         cut(tr);
