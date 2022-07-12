@@ -1,7 +1,7 @@
 public class Program {
     public static void main(String[] args) {
-        Saw saw = new Saw();
-        TreeBlock treeBlock = new TreeBlock();
+        TreeBlock treeBlock = new TreeBlock(100);
+        Saw saw = new Saw(treeBlock);
         new Human(saw, treeBlock).useTool();
     }
 
